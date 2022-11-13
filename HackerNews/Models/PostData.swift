@@ -12,11 +12,22 @@ struct Results: Decodable {
 }
 
 struct Post: Decodable, Identifiable {
+    let objectID: String
     var id: String {
         return objectID
     }
-    let objectID: String
+    
     let title: String
-    let points: Int
     let url: String?
+    
+    let points: Int
+    var pointsString: String {
+        var result = String(points)
+        switch result.count {
+            case 1: result = "00\(result)"
+            case 2: result = "0\(result)"
+            default: return result
+        }
+        return result
+    }
 }
