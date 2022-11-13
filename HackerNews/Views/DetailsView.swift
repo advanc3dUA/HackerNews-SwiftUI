@@ -11,7 +11,7 @@ struct DetailsView: View {
     let url: String?
     
     var body: some View {
-        Text("Hello, World!")
+        WebView(urlString: url)
     }
 }
 

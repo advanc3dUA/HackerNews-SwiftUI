@@ -14,6 +14,7 @@
 		BFA853862920FB6E005FE306 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA853852920FB6E005FE306 /* NetworkManager.swift */; };
 		BFA853882920FC63005FE306 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA853872920FC63005FE306 /* PostData.swift */; };
 		BFA8538B29210838005FE306 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA8538A29210838005FE306 /* DetailsView.swift */; };
+		BFA8538D29211142005FE306 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA8538C29211142005FE306 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		BFA853852920FB6E005FE306 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BFA853872920FC63005FE306 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		BFA8538A29210838005FE306 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		BFA8538C29211142005FE306 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		BFA8538E2921162D005FE306 /* HackerNews.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackerNews.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		BFA853752920F2EC005FE306 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				BFA8538E2921162D005FE306 /* HackerNews.entitlements */,
 				BFA853842920FB5A005FE306 /* Models */,
 				BFA853762920F2EC005FE306 /* HackerNewsApp.swift */,
 				BFA853892921082D005FE306 /* Views */,
@@ -88,6 +92,7 @@
 			children = (
 				BFA853782920F2EC005FE306 /* ContentView.swift */,
 				BFA8538A29210838005FE306 /* DetailsView.swift */,
+				BFA8538C29211142005FE306 /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				BFA853862920FB6E005FE306 /* NetworkManager.swift in Sources */,
 				BFA853882920FC63005FE306 /* PostData.swift in Sources */,
 				BFA853792920F2EC005FE306 /* ContentView.swift in Sources */,
+				BFA8538D29211142005FE306 /* WebView.swift in Sources */,
 				BFA8538B29210838005FE306 /* DetailsView.swift in Sources */,
 				BFA853772920F2EC005FE306 /* HackerNewsApp.swift in Sources */,
 			);
@@ -292,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HackerNews/HackerNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
@@ -310,6 +317,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.advanc3d.HackerNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HackerNews/HackerNews.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
@@ -339,6 +350,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.advanc3d.HackerNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
